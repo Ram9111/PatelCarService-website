@@ -1,0 +1,516 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.main {
+  width: 100%;
+  background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.5) 50%,
+      rgba(0, 0, 0, 0.5) 50%
+    ),
+    url(Home\ page.jpg);
+  background-position: center; /*puri image centare me ho*/
+  background-size: cover; /*background size me cover isliye 
+  lagaya he kyo ki furi image fir ho jaye*/
+  height: 100vh;
+}
+
+.activePage {
+  color: orangered;
+}
+
+.navbar {
+  /*ye upar ka menu and logo wale portion ko custmaiz karne ke liye use kara he*/
+  width: 1400px;
+  height: 75px;
+  margin: auto;
+}
+.icon {
+  /*ican class me jo PATEL CAR SERVICE likha he custmaiz karne ke liye use kara he*/
+  width: 310px auto;
+  float: left;
+  height: 70px;
+}
+.logo {
+  /*PATEL CAR SERVICE me color size ke liye use kara he */
+  color: rgb(229, 114, 42);
+  font-size: 35px;
+  font-family: "Carter One", cursive;
+  padding-left: 5px;
+  padding-top: 15px;
+}
+.menu {
+  /*menu ko design karne ke liye use kara he*/
+  width: 600px;
+  height: 70px;
+  float: left;
+}
+ul {
+  /*menu ko design karne ke liye use kara he*/
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ul li {
+  /*menu ko design karne ke liye use kara he*/
+  list-style: none; /*isse none nahi kara to menu ke age dot dot ajayege*/
+  margin-left: 55px;
+  margin-top: 27px;
+  font-size: 14px;
+}
+ul li a {
+  /*menu ko design karne ke liye use kara he*/
+  text-decoration: none;
+  color: white;
+  font-family: Arial;
+  font-weight: bold;
+  transition: 0.4s ease-in-out;
+}
+ul li a:hover {
+  /*menu pe hover karne ke liye use kara he*/
+  color: orangered;
+}
+
+.search {
+  /*seach ke blok ko banaya he*/
+  width: 300px;
+  float: left;
+  margin-top: 10px;
+  margin-left: 100px;
+  /*  */
+}
+
+.srch {
+  /*isse search box ke andar castmize karne ko use kara he*/
+  font-family: "Times New Roman";
+  width: 150px;
+  height: 30px;
+  background: transparent;
+  border: 1px sold rgb(198, 118, 13);
+  margin-top: 13px;
+  color: rgb(255, 254, 254);
+  border-right: none;
+  font-size: 16px;
+  float: left;
+  padding: 10px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border: 1px solid orange;
+}
+.btn {
+  /*btn is search botton and here we styling it*/
+  width: 100px;
+  height: 30px;
+  background: orange;
+  border: 2px solid orange;
+  margin: 13px;
+  color: rgb(168, 40, 40);
+  font-size: 15px;
+  border-top-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.btn:focus {
+  outline: none;
+}
+.srch:focus {
+  outline: none;
+}
+.content {
+  /*jo screen me wallcome to patel car
+   service likha he usse edit karne ke liye use kara he*/
+  width: 1200px;
+  height: auto;
+  margin: auto;
+  color: white;
+  position: relative;
+}
+.par {
+  /*uske niche jo peregraf he use edit kara he*/
+
+  padding-bottom: 25px;
+  font-family: normal;
+  letter-spacing: 2px;
+  line-height: 30px;
+}
+.content h1 {
+  font-family: "Times New Roman";
+  font-size: 40px;
+  margin-top: 9%;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+}
+.cn {
+  /*join us wali botton ko edit kara he */
+  width: 100px;
+  height: 30px;
+  background: orange;
+  border: none;
+  border-radius: 7%;
+}
+.content .cn .cna {
+  text-decoration: none;
+  color: black;
+}
+.cn:hover {
+  /*cn class me join in naam ki button banai he to usse hover kar rahe he*/
+  background-color: white;
+}
+.form {
+  width: 250px;
+  height: 380px;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8) 50%,
+    rgba(0, 0, 0, 0.8) 50%
+  );
+  position: absolute;
+  top: -20px;
+  left: 870px;
+  border-radius: 10px;
+  padding: 25px;
+}
+.form h2 {
+  width: 230px;
+  font-family: sans-serif;
+  text-align: center;
+  color: orange;
+  font-size: 22px;
+  background-color: white;
+  border-radius: 10px;
+  margin: 2px;
+  padding: 8px;
+}
+.form input {
+  width: 240px;
+  height: 35px;
+  background: transparent;
+  border-bottom: 3px solid orange;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  color: white;
+  font-size: 16px;
+  letter-spacing: 1px;
+  margin-top: 30px;
+  font-family: sans-serif;
+}
+.form input:focus {
+  outline: none;
+}
+::placeholder {
+  color: grey;
+  font-family: Arial;
+}
+.lbtn {
+  /*login botton ko custmixe kara he*/
+  width: 245px;
+  height: 30px;
+  background-color: orange;
+  border: none;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  transition: 0.2s ease;
+}
+.lbtn:hover {
+  /*login botton ko hover karne ke liye use kara he*/
+  background: white;
+  color: orange;
+}
+.lbtn a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+.form .link {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  padding-top: 20px;
+  text-align: center;
+}
+.form .link a {
+  text-decoration: none;
+  color: rgb(222, 150, 16);
+}
+.liw {
+  padding-top: 15px;
+  padding-bottom: 18px;
+  text-align: center;
+}
+/*THE ABOUTUS CSS IS START HERE*/
+/**/
+/**/
+/**/
+/**/
+.mainabout {
+  width: 100%;
+  background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.5) 50%,
+      rgba(0, 0, 0, 0.5) 50%
+    ),
+    url(aboutus.jpg);
+  background-position: center; /*puri image centare me ho*/
+  background-size: cover; /*background size me cover isliye 
+  lagaya he kyo ki furi image fir ho jaye*/
+  height: 100vh;
+}
+.aboutcontent {
+  margin-top: 50px;
+  margin-left: 50px;
+  font-size: 20;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  color: white;
+  word-spacing: 2px;
+  position: absolute;
+}
+.aboutcontent h2 {
+  color: rgb(236, 110, 64);
+  font-weight: bold;
+}
+/*********Slide ko castmize karne ke liye use kara he**********/
+
+/* img {
+  width: 200px;
+  height: 200px;
+} */
+
+/*NOW HERE WE START CSS OF CONTECT US*/
+/**/
+/**/
+/**/
+/**/
+.maincontect {
+  width: 100%;
+  background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.5) 50%,
+      rgba(0, 0, 0, 0.5) 50%
+    ),
+    url(contectus.jpg);
+  background-position: center; /*puri image centare me ho*/
+  background-size: cover; /*background size me cover isliye 
+  lagaya he kyo ki furi image fir ho jaye*/
+  height: 100vh;
+}
+.contectform h1 {
+  font-size: 60px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.582);
+  margin-left: 30px;
+}
+.contectform p {
+  font-family: "Times New Roman";
+  margin-top: 10px;
+  margin-left: 10px;
+  background: transparent;
+  color: black;
+  font-weight: bold;
+}
+.cbtn {
+  margin-top: -15px;
+  margin-left: 33%;
+  width: 100px;
+  border-radius: 6%;
+  color: rgb(0, 0, 0);
+  font-size: large;
+  padding: 3%;
+  font-style: normal;
+  font-weight: bold;
+  background: orange;
+  border: none;
+}
+.cbtn:hover {
+  color: rgb(29, 18, 18);
+  background-color: rgb(254, 254, 254);
+}
+div.contectform {
+  width: 400px;
+  margin: 100px auto 0px auto;
+  background-color: rgba(244, 141, 7, 0.411);
+  border-radius: 10px;
+  height: 55%;
+  width: 400px;
+  margin: 10px auto 0px auto;
+}
+.info {
+  /* margin-top: 10px; */
+  margin-left: 30px;
+  width: 500px;
+  color: aliceblue;
+  position: absolute;
+  margin-top: -25%;
+  font-size: 25px;
+}
+/* NOW WE START SERVICE CSS HERE */
+/**/
+/**/
+/**/
+/**/
+.mainservice {
+  width: 100%;
+  background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.5) 50%,
+      rgba(0, 0, 0, 0.5) 50%
+    ),
+    url(Services.jpg);
+  background-position: fixed; /*puri image centare me ho*/
+  background-size: cover; /*background size me cover isliye 
+  lagaya he kyo ki furi image fir ho jaye*/
+  height: 100vh;
+  /* position: fixed; */
+  /* static, relative, absolute, fixed, or sticky */
+}
+.servicedetail h1 {
+  width: 350px;
+  text-align: center;
+  color: aliceblue;
+  font-weight: bold;
+  font-size: 40px;
+  font-style: normal;
+  font-family: Arial, Helvetica, sans-serif;
+  /* background: transparent; */
+}
+.servicedetail {
+  color: antiquewhite;
+  width: 400px;
+  font-size: 21px;
+  margin-top: 50px;
+  margin-right: 200px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  float: right;
+}
+
+.servicedetail p {
+  margin-top: 7px;
+  padding-left: 10px;
+}
+div.servicedetail {
+  width: 400px;
+  margin: 50 auto 0px auto;
+  background-color: rgba(244, 141, 7, 0.411);
+  border-radius: 10px;
+}
+
+.custom input {
+  padding: 5px;
+  font-size: large;
+  color: black;
+  width: 100%;
+}
+
+.custom {
+  padding: 14%;
+  box-sizing: border-box;
+}
+
+h1.headme {
+  color: white;
+}
+
+.sbtn {
+  margin-left: 30%;
+  width: 100px;
+  border-radius: 6%;
+  color: rgb(255, 255, 255);
+  font-size: large;
+  padding: 3%;
+  font-style: normal;
+  font-weight: bold;
+  background: orange;
+  border: none;
+}
+.sbtn:hover {
+  color: rgb(29, 18, 18);
+  background-color: rgb(254, 254, 254);
+}
+
+/********************GRID CSS***************************/
+.gallery {
+  /* background-color: red; */
+  width: 630px;
+  height: 630px;
+  display: grid;
+  grid-template-rows: 200px 200px 200px;
+  grid-template-columns: 200px 200px 200px;
+  column-gap: 10px;
+  row-gap: 10px;
+  position: relative;
+  float: left;
+  margin-left: 70px;
+  margin-top: 30px; /*left me shift karne ke liye*/
+  /* margin-top: -35%; */
+}
+.item1 {
+  /* background-color: rgb(230, 160, 22); */
+  height: 100px;
+  width: 100px;
+  justify-self: center; /*IMP ye dono propery item ko bilkul sentre me kati he/ */
+  align-self: center; /*IMP ye dono propery item ko bilkul sentre me kati he/ */
+  color: white;
+}
+img {
+  max-width: 100px;
+  height: auto;
+}
+.item1:hover {
+  /*This is use for icon animetion*/
+  color: orange;
+
+  box-shadow: 0 0 5px #e68b14;
+  text-shadow: 0 0 5px #e68b14;
+  margin-top: -20px;
+  text-shadow: white 0.006em 0.006em 0.007em,
+    rgba(16, 16, 16, 0.4) 1px 38px 26px, rgba(16, 16, 16, 0.2) 1px 42px 30px,
+    rgba(16, 16, 16, 0.2) 1px 46px 65px, rgba(16, 16, 16, 0.4) 1px 50px 95px,
+    white -0.15em -0.1em 100px;
+}
+/*we start here css of FEEDBACK */
+/**/
+/**/
+/**/
+/**/
+.mainfeedback {
+  width: 100%;
+  background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.5) 50%,
+      rgba(0, 0, 0, 0.5) 50%
+    ),
+    url(feedback.jpg);
+  background-position: fixed; /*puri image centare me ho*/
+  background-size: cover; /*background size me cover isliye 
+  lagaya he kyo ki furi image fir ho jaye*/
+  height: 100vh;
+}
+.feedbackdetail {
+  color: white;
+  background-color: rgba(244, 141, 7, 0.411);
+  width: 23vh;
+  height: 25vh;
+  padding: 50px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.fbtn {
+  color: rgb(255, 255, 255);
+  background-color: #e68b14;
+  width: 80px;
+  height: 35px;
+  border-radius: 7px;
+  text-align: center;
+  margin-left: 22%;
+  margin-top: 5%;
+}
